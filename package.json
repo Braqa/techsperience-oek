@@ -1,0 +1,22 @@
+{
+  "name": "techsperience-oek",
+  "version": "1.0.0",
+  "description": "Prototype for Oda Ekonomike e Kosoves",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Braqa/techsperience-oek.git"
+  },
+  "author": "Pleurat Pula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Braqa/techsperience-oek/issues"
+  },
+  "homepage": "https://github.com/Braqa/techsperience-oek#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
