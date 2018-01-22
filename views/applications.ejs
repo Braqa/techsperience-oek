@@ -1,0 +1,40 @@
+<% include partials/header %>
+    <div class="container">
+        <div id="title">
+            <h1>Applications table</h1>
+        </div>
+        <div id="container">
+            <table id="myTable">
+                <thead>
+                    <tr id="head-row">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Interested Field</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <% applications.forEach(function(application) { %>
+                    <tr id="body-row">
+                        <td>
+                            <%= application.firstname %>
+                        </td>
+                        <td>
+                            <%= application.lastname %>
+                        </td>
+                        <td>
+                            <%= application.gender %>
+                        </td>
+                        <td>
+                            <%= application.interestedfield %>
+                        </td>
+                        <td>
+
+                            <a href="/applications/edit/<%= application._id%>"><input width="30px" type="image" src="edit.png"> </a><a href="/applications/delete/<%= application._id %>"> <input type="image" src="delete.png" width="30px"> </a>
+
+                        </td>
+                    </tr>
+                    <% }); %>
+            </table>
+        </div>
+        <% include partials/footer %>

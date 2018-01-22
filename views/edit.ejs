@@ -1,0 +1,46 @@
+<%- include partials/header %>
+
+    <div class="container-fluid">
+        <form class="form-inline" method="POST" action="/applications/update/<%= applications._id %>">
+            <h3>Account Registration</h3>
+            <br>
+            <div class="form-group">
+                <div class="container">
+                    <label for="firstname" class="labels">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" name="name" placeholder="Write your name" value="<%= applications.firstname%>">
+                    <br>
+                    <label for="lastname" class="labels">Last Name:</label>
+                    <input type="text" class="form-control" name="surname" id="lastname" placeholder="Write your surname" value="<%= applications.lastname%>">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="container">
+                    <label for="text" class="labels">Gender:</label>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Other
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="container">
+                    <label for="text" class="labels">Interested Field:</label>
+                    <select class="form-control" name="intfield">
+                           <option disabled selected>Interested Field</option>
+                            <option>Frontend Developer</option>
+                            <option>Backend Developer</option>
+                            <option>Fullstack Developer</option>
+                            <option>Android Developer</option>
+                            <option>Network Administrator</option>
+                        </select>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <div style="text-align: center; ">
+                <input type="submit" value="SUBMIT" id="butoni">
+            </div>
+        </form>
+    </div>
+
+    <% include partials/footer %>

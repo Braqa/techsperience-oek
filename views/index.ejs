@@ -1,0 +1,130 @@
+<% include partials/header %>
+
+    <div class="container-fluid">
+        <div id="title">
+            <h1>ODA EKONOMIKE E KOSOVES</h1>
+
+        </div>
+
+
+        <form class="form-inline" method="post" action="/applications/add">
+            <h3>Account Registration</h3>
+
+            <div class="form-group">
+                <div class="container">
+                    <label for="username" class="labels">Username:</label>
+                    <input type="text" class="form-control" name="username" placeholder="Write your username" id="username" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="container">
+                    <label for="email" class="labels">E-mail:</label>
+                    <input type="email" class="form-control" name="email" placeholder="example@hotmail.com" id="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="container">
+                    <label for="pas" class="labels">Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="******" id="pas" required>
+                </div>
+            </div>
+
+            <div>
+                <h3>Personal Information</h3>
+            </div>
+
+
+
+            <div class="form-group">
+                <div class="container">
+                    <label for="firstname" class="labels">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" name="name" placeholder="Write your name" required>
+                    <br>
+                    <label for="lastname" class="labels">Last Name:</label>
+                    <input type="text" class="form-control" name="surname" id="lastname" placeholder="Write your surname" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="container">
+                    <label for="text" class="labels">Gender:</label>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Other
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="container">
+                    <label for="text" class="labels">Birthday:</label>
+                    <input type="date" name="bday" class="form-control" required>
+                </div>
+            </div>
+
+            <h3>Education</h3>
+
+            <div class="form-group">
+
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <label for="text" class="labels">Degree:</label>
+                            <select class="form-control" name="grades" required>
+                            <option disabled selected>Grade</option>
+                            <option>Middle School</option>
+                            <option>Bachelor</option>
+                            <option>Master</option>
+                            <option>PHD</option>
+                            <option>None</option>
+                        </select>
+                            <br>
+                            <label for="text" class="labels">Study Field:</label>
+                            <select class="form-control" name="stdyfield">
+                            <option disabled selected>Study Field</option>
+                            <option>Natural Science</option>
+                            <option>Social Science</option>
+                            <option>Economy</option>
+                            <option>Agronomy</option>
+                            <option>Math</option>
+                                <option>Computer Science</option>
+                        </select>
+                            <br>
+                            <label for="text" class="labels">From:</label>
+                            <input type="date" name="from" class="form-control">
+                            <br>
+                            <label for="text" class="labels">To:</label>
+                            <input type="date" name="to" class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <h3>Positions</h3>
+
+            <div class="form-group">
+                <div class="container">
+                    <label for="text" class="labels">Interested Field:</label>
+                    <select class="form-control" name="intfield">
+                            <option disabled selected>Interested Field</option>
+                            <option>Frontend Developer</option>
+                            <option>Backend Developer</option>
+                            <option>Fullstack Developer</option>
+                            <option>Android Developer</option>
+                            <option>Network Administrator</option>
+                        </select>
+                </div>
+                <br>
+            </div>
+            <div style="text-align: center; ">
+                <input type="submit" value="SUBMIT" id="butoni">
+            </div>
+        </form>
+    </div>
+
+    <% include partials/footer %>
